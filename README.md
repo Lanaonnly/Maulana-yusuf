@@ -1,219 +1,159 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae</title>
+    <meta charset="UTF-8">
+    <title>CV Pelajar - Maulana Yusuf</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+        }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #eaeaea;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
+        .cv {
+            width: 900px;
+            margin: 20px auto;
+            display: flex;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
 
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      background: #ffffff;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
+        /* ===== KIRI ===== */
+        .left {
+            width: 32%;
+            background-color: #1aa3a3;
+            color: white;
+            padding: 20px;
+        }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 5px;
-      letter-spacing: 2px;
-    }
+        .foto {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
 
-    h2 {
-      border-bottom: 2px solid #000;
-      padding-bottom: 5px;
-      margin-top: 30px;
-    }
+        .left h3 {
+            border-bottom: 1px solid #ffffff;
+            margin-top: 20px;
+            padding-bottom: 5px;
+        }
 
-    p {
-      margin: 6px 0;
-    }
+        .left p {
+            font-size: 14px;
+        }
 
-    ul {
-      margin: 10px 0 10px 20px;
-    }
+        .left ul {
+            padding-left: 18px;
+            font-size: 14px;
+        }
 
-    li {
-      margin-bottom: 6px;
-    }
+        /* ===== KANAN ===== */
+        .right {
+            width: 68%;
+            padding: 30px;
+        }
 
-    .center {
-      text-align: center;
-    }
+        .right h1 {
+            color: #1aa3a3;
+            margin-bottom: 5px;
+        }
 
-    .section {
-      margin-bottom: 20px;
-    }
+        .sub {
+            color: gray;
+            margin-bottom: 20px;
+        }
 
-    .data-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
+        .right h2 {
+            color: #1aa3a3;
+            border-bottom: 2px solid #1aa3a3;
+            margin-top: 25px;
+            padding-bottom: 5px;
+        }
 
-    .data-table td {
-      padding: 6px;
-      vertical-align: top;
-    }
+        .right p, .right ul {
+            font-size: 15px;
+        }
 
-    .footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-    }
-  </style>
+        .right ul {
+            padding-left: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="cv">
 
-  <!-- HEADER -->
-  <div class="center">
-    <h1>CURRICULUM VITAE</h1>
-    <p><strong>Posisi yang Dilamar:</strong> IT Support / Network Administrator (Junior)</p>
-  </div>
+    <!-- ===== BAGIAN KIRI ===== -->
+    <div class="left">
+        <img src="foto.jpg" alt="Foto Profil" class="foto">
 
-  <!-- DATA PRIBADI -->
-  <h2>DATA PRIBADI</h2>
-  <table class="data-table">
-    <tr>
-      <td width="35%">Nama Lengkap</td>
-      <td>: Maulana yusuf</td>
-    </tr>
-    <tr>
-      <td>Tempat, Tanggal Lahir</td>
-      <td>: lebak 27 oktober 2008</td>
-    </tr>
-    <tr>
-      <td>Jenis Kelamin</td>
-      <td>: Laki-laki</td>
-    </tr>
-    <tr>
-      <td>Alamat</td>
-      <td>: kp. parage</td>
-    </tr>
-    <tr>
-      <td>No. HP / WhatsApp</td>
-      <td>: 083872161233</td>
-    </tr>
-    <tr>
-      <td>Email</td>
-      <td>: maulana27.10.28@gmail.com</td>
-    </tr>
-    <tr>
-      <td>Status</td>
-      <td>: Pelajar</td>
-    </tr>
-  </table>
+        <h3>DATA PRIBADI</h3>
+        <p><b>Nama</b><br>Maulana Yusuf</p>
+        <p><b>Jenis Kelamin</b><br>Laki-laki</p>
+        <p><b>Agama</b><br>Islam</p>
 
-  <!-- PROFIL -->
-  <h2>PROFIL SINGKAT</h2>
-  <p>
-    Saya adalah siswa SMK jurusan Teknik Komputer dan Jaringan (TKJ) yang memiliki
-    minat besar di bidang teknologi informasi, jaringan komputer, dan troubleshooting
-    perangkat. Saya terbiasa bekerja secara mandiri maupun dalam tim, disiplin,
-    bertanggung jawab, dan siap belajar hal baru.
-  </p>
+        <h3>KONTAK</h3>
+        <p>📱 WhatsApp<br>0838 7216 1233</p>
+        <p>✉️ Email<br>maulana27.10.28@gmail.com</p>
+        <p>🏠 Alamat<br>Jl. Ir. Soetami</p>
 
-  <!-- PENDIDIKAN -->
-  <h2>RIWAYAT PENDIDIKAN</h2>
-  <ul>
-    <li>
-      <strong>SMK Negeri 1 Rangkasbitung</strong><br>
-      Jurusan: Teknik Komputer dan Jaringan (TKJ)<br>
-      Tahun: 2023 – Sekarang
-    </li>
-    <li>
-      <strong>SMP</strong><br>
-      Tahun: 2020 – 2023
-    </li>
-    <li>
-      <strong>SD</strong><br>
-      Tahun: 2014 – 2020
-    </li>
-  </ul>
+        <h3>KEAHLIAN</h3>
+        <ul>
+            <li>Pengoperasian Komputer</li>
+            <li>Microsoft Word</li>
+            <li>Microsoft Excel</li>
+            <li>Microsoft PowerPoint</li>
+            <li>Internet & Email</li>
+            <li>Dasar HTML & CSS</li>
+        </ul>
 
-  <!-- KEAHLIAN -->
-  <h2>KEAHLIAN</h2>
-  <ul>
-    <li>Instalasi dan konfigurasi jaringan LAN & WAN</li>
-    <li>Pengalamatan IP (FLSM & VLSM)</li>
-    <li>Crimping kabel UTP & pemasangan RJ45</li>
-    <li>Konfigurasi dasar Mikrotik & Cisco</li>
-    <li>Instalasi sistem operasi Windows & Linux</li>
-    <li>Troubleshooting jaringan dan komputer</li>
-    <li>HTML & CSS dasar</li>
-    <li>Penggunaan GitHub (upload project)</li>
-  </ul>
+        <h3>HOBI</h3>
+        <ul>
+            <li>Menggunakan Komputer</li>
+            <li>Belajar Teknologi</li>
+            <li>Mencari Informasi di Internet</li>
+        </ul>
+    </div>
 
-  <!-- PENGALAMAN -->
-  <h2>PENGALAMAN</h2>
-  <ul>
-    <li>
-      <strong>Praktik Jaringan di Sekolah</strong><br>
-      - Membuat topologi jaringan LAN<br>
-      - Konfigurasi IP Address<br>
-      - Simulasi jaringan menggunakan Cisco Packet Tracer
-    </li>
-    <li>
-      <strong>Proyek Mini</strong><br>
-      - Membuat website CV menggunakan HTML & CSS<br>
-      - Upload website ke GitHub Pages
-    </li>
-  </ul>
+    <!-- ===== BAGIAN KANAN ===== -->
+    <div class="right">
+        <h1>MAULANA YUSUF</h1>
+        <p class="sub">Pelajar</p>
 
-  <!-- SERTIFIKAT -->
-  <h2>SERTIFIKAT & PELATIHAN</h2>
-  <ul>
-    <li>Pelatihan Dasar Jaringan Komputer</li>
-    <li>Pelatihan Instalasi Perangkat Jaringan</li>
-    <li>Workshop Cisco Packet Tracer</li>
-  </ul>
+        <h2>PROFIL SINGKAT</h2>
+        <p>
+            Saya adalah seorang pelajar yang memiliki minat di bidang
+            Teknologi Informasi dan Komputer. Terbiasa menggunakan komputer
+            untuk mengerjakan tugas sekolah dan siap belajar hal baru.
+        </p>
 
-  <!-- KEMAMPUAN PRIBADI -->
-  <h2>KEMAMPUAN PRIBADI</h2>
-  <ul>
-    <li>Disiplin dan bertanggung jawab</li>
-    <li>Mudah belajar hal baru</li>
-    <li>Mampu bekerja di bawah tekanan</li>
-    <li>Komunikatif</li>
-    <li>Jujur dan pekerja keras</li>
-  </ul>
+        <h2>RIWAYAT PENDIDIKAN</h2>
+        <ul>
+            <li><b>SMP / SMA / SMK</b><br>(Isi nama sekolah & tahun)</li>
+            <li><b>Sekolah Dasar</b><br>(Opsional)</li>
+        </ul>
 
-  <!-- HOBI -->
-  <h2>HOBI</h2>
-  <ul>
-    <li>Belajar teknologi baru</li>
-    <li>Otak-atik komputer</li>
-    <li>Membaca artikel IT</li>
-    <li>Memancing</li>
-  </ul>
+        <h2>PENGALAMAN</h2>
+        <ul>
+            <li>Mengerjakan tugas sekolah berbasis komputer</li>
+            <li>Membuat dokumen, tabel, dan presentasi</li>
+            <li>Membuat website sederhana (HTML & CSS)</li>
+        </ul>
 
-  <!-- PENUTUP -->
-  <h2>PENUTUP</h2>
-  <p>
-    Demikian Curriculum Vitae ini saya buat dengan sebenar-benarnya.
-    Saya berharap dapat diberikan kesempatan untuk mengikuti tahap seleksi selanjutnya.
-  </p>
+        <h2>KEGIATAN / ORGANISASI</h2>
+        <ul>
+            <li>Mengikuti kegiatan sekolah</li>
+            <li>Bekerja sama dalam tugas kelompok</li>
+        </ul>
 
-  <div class="footer">
-    <p>Hormat saya,</p>
-    <br>
-    <p><strong>Maulana</strong></p>
-  </div>
+        <h2>KELEBIHAN</h2>
+        <ul>
+            <li>Disiplin dan bertanggung jawab</li>
+            <li>Mudah belajar hal baru</li>
+            <li>Dapat bekerja mandiri maupun tim</li>
+        </ul>
+    </div>
 
 </div>
 
