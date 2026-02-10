@@ -3,183 +3,217 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae - Maulana</title>
-username.github.io/
-├── index.html
-└── foto.jpg 
+  <title>Curriculum Vitae</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f0f2f5;
+      background-color: #eaeaea;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
 
-    .cv {
+    .container {
       max-width: 900px;
-      background: #ffffff;
       margin: 30px auto;
+      background: #ffffff;
       padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
-    .header {
+    h1 {
       text-align: center;
-      border-bottom: 3px solid #000;
-      padding-bottom: 15px;
-    }
-
-    .header h1 {
-      margin: 0;
-      font-size: 32px;
+      margin-bottom: 5px;
       letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    .header p {
-      margin: 5px 0 0;
-      font-size: 16px;
     }
 
     h2 {
-      margin-top: 25px;
-      font-size: 20px;
       border-bottom: 2px solid #000;
       padding-bottom: 5px;
+      margin-top: 30px;
     }
 
-    p, li {
-      font-size: 15px;
-      line-height: 1.7;
-      color: #333;
+    p {
+      margin: 6px 0;
     }
 
     ul {
-      padding-left: 20px;
-      margin-top: 8px;
+      margin: 10px 0 10px 20px;
     }
 
-    table {
+    li {
+      margin-bottom: 6px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .data-table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
     }
 
-    table td {
-      padding: 6px 4px;
+    .data-table td {
+      padding: 6px;
       vertical-align: top;
     }
 
-    @media (max-width: 600px) {
-      .header h1 {
-        font-size: 26px;
-      }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-<div class="cv">
+<div class="container">
 
   <!-- HEADER -->
-  <div class="header">
-    <h1>Maulana</h1>
-    <p>Siswa SMK | Teknik Komputer dan Jaringan (TKJ)</p>
-    <p>Email: maulana@email.com | GitHub: github.com/username | No HP: 08xxxxxxxxxx</p>
+  <div class="center">
+    <h1>CURRICULUM VITAE</h1>
+    <p><strong>Posisi yang Dilamar:</strong> IT Support / Network Administrator (Junior)</p>
   </div>
 
-  <!-- PROFIL -->
-  <h2>Profil</h2>
-  <p>
-    Saya adalah siswa SMK jurusan Teknik Komputer dan Jaringan yang memiliki
-    ketertarikan di bidang jaringan komputer, IT support, dan teknologi informasi.
-    Terbiasa melakukan instalasi jaringan, konfigurasi perangkat, serta
-    troubleshooting dasar. Memiliki motivasi tinggi, disiplin, dan siap bekerja
-    maupun belajar hal baru di dunia kerja.
-  </p>
-
   <!-- DATA PRIBADI -->
-  <h2>Data Pribadi</h2>
-  <table>
-    <tr><td>Nama Lengkap</td><td>: Maulana</td></tr>
-    <tr><td>Tempat, Tanggal Lahir</td><td>: …………………</td></tr>
-    <tr><td>Jenis Kelamin</td><td>: Laki-laki</td></tr>
-    <tr><td>Agama</td><td>: …………………</td></tr>
-    <tr><td>Alamat</td><td>: …………………</td></tr>
-    <tr><td>Status</td><td>: Pelajar</td></tr>
+  <h2>DATA PRIBADI</h2>
+  <table class="data-table">
+    <tr>
+      <td width="35%">Nama Lengkap</td>
+      <td>: Maulana</td>
+    </tr>
+    <tr>
+      <td>Tempat, Tanggal Lahir</td>
+      <td>: Rangkasbitung, 2007</td>
+    </tr>
+    <tr>
+      <td>Jenis Kelamin</td>
+      <td>: Laki-laki</td>
+    </tr>
+    <tr>
+      <td>Alamat</td>
+      <td>: Rangkasbitung, Banten</td>
+    </tr>
+    <tr>
+      <td>No. HP / WhatsApp</td>
+      <td>: 08xxxxxxxxxx</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>: nama@email.com</td>
+    </tr>
+    <tr>
+      <td>Status</td>
+      <td>: Pelajar</td>
+    </tr>
   </table>
 
+  <!-- PROFIL -->
+  <h2>PROFIL SINGKAT</h2>
+  <p>
+    Saya adalah siswa SMK jurusan Teknik Komputer dan Jaringan (TKJ) yang memiliki
+    minat besar di bidang teknologi informasi, jaringan komputer, dan troubleshooting
+    perangkat. Saya terbiasa bekerja secara mandiri maupun dalam tim, disiplin,
+    bertanggung jawab, dan siap belajar hal baru.
+  </p>
+
   <!-- PENDIDIKAN -->
-  <h2>Pendidikan</h2>
+  <h2>RIWAYAT PENDIDIKAN</h2>
   <ul>
     <li>
-      <strong>SMK Negeri …………………</strong><br>
-      Jurusan Teknik Komputer dan Jaringan (TKJ)<br>
-      Tahun: …………………
+      <strong>SMK Negeri 1 Rangkasbitung</strong><br>
+      Jurusan: Teknik Komputer dan Jaringan (TKJ)<br>
+      Tahun: 2023 – Sekarang
+    </li>
+    <li>
+      <strong>SMP</strong><br>
+      Tahun: 2020 – 2023
+    </li>
+    <li>
+      <strong>SD</strong><br>
+      Tahun: 2014 – 2020
     </li>
   </ul>
 
-  <!-- KEAHLIAN TEKNIS -->
-  <h2>Keahlian Teknis</h2>
+  <!-- KEAHLIAN -->
+  <h2>KEAHLIAN</h2>
   <ul>
-    <li>Instalasi dan konfigurasi jaringan LAN</li>
-    <li>Perhitungan IP Address dan subnetting (FLSM & VLSM)</li>
-    <li>Crimping kabel UTP straight & crossover</li>
-    <li>Konfigurasi dasar router dan switch Cisco</li>
-    <li>Penggunaan Cisco Packet Tracer</li>
-    <li>Instalasi dan pengelolaan Windows</li>
-    <li>Dasar sistem operasi Linux</li>
-  </ul>
-
-  <!-- KEAHLIAN NON TEKNIS -->
-  <h2>Keahlian Non Teknis</h2>
-  <ul>
-    <li>Mampu bekerja secara individu maupun tim</li>
-    <li>Disiplin, jujur, dan bertanggung jawab</li>
-    <li>Komunikasi yang baik</li>
-    <li>Mudah beradaptasi dengan lingkungan baru</li>
+    <li>Instalasi dan konfigurasi jaringan LAN & WAN</li>
+    <li>Pengalamatan IP (FLSM & VLSM)</li>
+    <li>Crimping kabel UTP & pemasangan RJ45</li>
+    <li>Konfigurasi dasar Mikrotik & Cisco</li>
+    <li>Instalasi sistem operasi Windows & Linux</li>
+    <li>Troubleshooting jaringan dan komputer</li>
+    <li>HTML & CSS dasar</li>
+    <li>Penggunaan GitHub (upload project)</li>
   </ul>
 
   <!-- PENGALAMAN -->
-  <h2>Pengalaman</h2>
+  <h2>PENGALAMAN</h2>
   <ul>
-    <li>Praktik instalasi jaringan LAN di lingkungan sekolah</li>
-    <li>Perhitungan dan perencanaan IP Address jaringan</li>
-    <li>Simulasi topologi jaringan menggunakan Cisco Packet Tracer</li>
-    <li>Perawatan dan pengecekan jaringan komputer</li>
-  </ul>
-
-  <!-- PROYEK / KEGIATAN -->
-  <h2>Proyek / Kegiatan</h2>
-  <ul>
-    <li>Membuat topologi jaringan sederhana untuk laboratorium sekolah</li>
-    <li>Simulasi jaringan WAN dan point-to-point</li>
-    <li>Latihan troubleshooting koneksi jaringan</li>
+    <li>
+      <strong>Praktik Jaringan di Sekolah</strong><br>
+      - Membuat topologi jaringan LAN<br>
+      - Konfigurasi IP Address<br>
+      - Simulasi jaringan menggunakan Cisco Packet Tracer
+    </li>
+    <li>
+      <strong>Proyek Mini</strong><br>
+      - Membuat website CV menggunakan HTML & CSS<br>
+      - Upload website ke GitHub Pages
+    </li>
   </ul>
 
   <!-- SERTIFIKAT -->
-  <h2>Sertifikat</h2>
+  <h2>SERTIFIKAT & PELATIHAN</h2>
   <ul>
-    <li>…………………</li>
-    <li>…………………</li>
+    <li>Pelatihan Dasar Jaringan Komputer</li>
+    <li>Pelatihan Instalasi Perangkat Jaringan</li>
+    <li>Workshop Cisco Packet Tracer</li>
   </ul>
 
-  <!-- HOBI & MINAT -->
-  <h2>Hobi & Minat</h2>
+  <!-- KEMAMPUAN PRIBADI -->
+  <h2>KEMAMPUAN PRIBADI</h2>
   <ul>
-    <li>Mempelajari teknologi jaringan dan IT</li>
-    <li>Mencoba konfigurasi jaringan sederhana</li>
-    <li>Membaca dan menonton konten edukasi IT</li>
+    <li>Disiplin dan bertanggung jawab</li>
+    <li>Mudah belajar hal baru</li>
+    <li>Mampu bekerja di bawah tekanan</li>
+    <li>Komunikatif</li>
+    <li>Jujur dan pekerja keras</li>
+  </ul>
+
+  <!-- HOBI -->
+  <h2>HOBI</h2>
+  <ul>
+    <li>Belajar teknologi baru</li>
+    <li>Otak-atik komputer</li>
+    <li>Membaca artikel IT</li>
+    <li>Memancing</li>
   </ul>
 
   <!-- PENUTUP -->
-  <h2>Pernyataan</h2>
+  <h2>PENUTUP</h2>
   <p>
-    Saya menyatakan bahwa seluruh data yang saya tuliskan di dalam Curriculum Vitae
-    ini adalah benar dan dapat dipertanggungjawabkan.
+    Demikian Curriculum Vitae ini saya buat dengan sebenar-benarnya.
+    Saya berharap dapat diberikan kesempatan untuk mengikuti tahap seleksi selanjutnya.
   </p>
+
+  <div class="footer">
+    <p>Hormat saya,</p>
+    <br>
+    <p><strong>Maulana</strong></p>
+  </div>
 
 </div>
 
