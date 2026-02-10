@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #e6e6e6;
+      background: #f0f2f5;
       margin: 0;
       padding: 0;
     }
@@ -23,29 +23,19 @@
     }
 
     .header {
-      display: flex;
-      gap: 25px;
-      align-items: center;
+      text-align: center;
       border-bottom: 3px solid #000;
-      padding-bottom: 20px;
-      flex-wrap: wrap;
+      padding-bottom: 15px;
     }
 
-    .photo {
-      width: 150px;
-      height: 190px;
-      border: 2px solid #000;
-      object-fit: cover;
-      background: #fff;
-    }
-
-    .header-text h1 {
+    .header h1 {
       margin: 0;
-      font-size: 30px;
+      font-size: 32px;
+      letter-spacing: 2px;
       text-transform: uppercase;
     }
 
-    .header-text p {
+    .header p {
       margin: 5px 0 0;
       font-size: 16px;
     }
@@ -59,11 +49,13 @@
 
     p, li {
       font-size: 15px;
-      line-height: 1.6;
+      line-height: 1.7;
+      color: #333;
     }
 
     ul {
       padding-left: 20px;
+      margin-top: 8px;
     }
 
     table {
@@ -73,14 +65,13 @@
     }
 
     table td {
-      padding: 6px;
+      padding: 6px 4px;
       vertical-align: top;
     }
 
     @media (max-width: 600px) {
-      .header {
-        justify-content: center;
-        text-align: center;
+      .header h1 {
+        font-size: 26px;
       }
     }
   </style>
@@ -92,78 +83,100 @@
 
   <!-- HEADER -->
   <div class="header">
-    <img src="foto.jpg" alt="Foto Maulana" class="photo">
-    <div class="header-text">
-      <h1>Maulana</h1>
-      <p>Siswa SMK – Teknik Komputer dan Jaringan</p>
-    </div>
+    <h1>Maulana</h1>
+    <p>Siswa SMK | Teknik Komputer dan Jaringan (TKJ)</p>
+    <p>Email: maulana@email.com | GitHub: github.com/username | No HP: 08xxxxxxxxxx</p>
   </div>
+
+  <!-- PROFIL -->
+  <h2>Profil</h2>
+  <p>
+    Saya adalah siswa SMK jurusan Teknik Komputer dan Jaringan yang memiliki
+    ketertarikan di bidang jaringan komputer, IT support, dan teknologi informasi.
+    Terbiasa melakukan instalasi jaringan, konfigurasi perangkat, serta
+    troubleshooting dasar. Memiliki motivasi tinggi, disiplin, dan siap bekerja
+    maupun belajar hal baru di dunia kerja.
+  </p>
 
   <!-- DATA PRIBADI -->
   <h2>Data Pribadi</h2>
   <table>
     <tr><td>Nama Lengkap</td><td>: Maulana</td></tr>
-    <tr><td>Tempat, Tanggal Lahir</td><td>: lebak 27 oktober 2008</td></tr>
+    <tr><td>Tempat, Tanggal Lahir</td><td>: …………………</td></tr>
     <tr><td>Jenis Kelamin</td><td>: Laki-laki</td></tr>
-    <tr><td>Agama</td><td>: islam</td></tr>
-    <tr><td>Alamat</td><td>: kp.parage</td></tr>
-    <tr><td>No. HP</td><td>: 083872161233</td></tr>
-    <tr><td>Email</td><td>: maulana@email.com</td></tr>
+    <tr><td>Agama</td><td>: …………………</td></tr>
+    <tr><td>Alamat</td><td>: …………………</td></tr>
+    <tr><td>Status</td><td>: Pelajar</td></tr>
   </table>
-
-  <!-- PROFIL SINGKAT -->
-  <h2>Profil Singkat</h2>
-  <p>
-    Saya adalah siswa SMK jurusan Teknik Komputer dan Jaringan yang memiliki
-    minat di bidang jaringan komputer dan IT support. Terbiasa bekerja dengan
-    perangkat jaringan, disiplin, dan siap belajar hal baru.
-  </p>
 
   <!-- PENDIDIKAN -->
   <h2>Pendidikan</h2>
   <ul>
     <li>
-      SMK Negeri 1 Rangkasbitung<br>
-      Jurusan Teknik Komputer dan Jaringan (TKJ)
+      <strong>SMK Negeri …………………</strong><br>
+      Jurusan Teknik Komputer dan Jaringan (TKJ)<br>
+      Tahun: …………………
     </li>
   </ul>
 
-  <!-- KEAHLIAN -->
-  <h2>Keahlian</h2>
+  <!-- KEAHLIAN TEKNIS -->
+  <h2>Keahlian Teknis</h2>
   <ul>
     <li>Instalasi dan konfigurasi jaringan LAN</li>
-    <li>Perhitungan subnetting (FLSM & VLSM)</li>
-    <li>Crimping kabel UTP dan pengecekan jaringan</li>
+    <li>Perhitungan IP Address dan subnetting (FLSM & VLSM)</li>
+    <li>Crimping kabel UTP straight & crossover</li>
     <li>Konfigurasi dasar router dan switch Cisco</li>
-    <li>Instalasi Windows dan Linux dasar</li>
+    <li>Penggunaan Cisco Packet Tracer</li>
+    <li>Instalasi dan pengelolaan Windows</li>
+    <li>Dasar sistem operasi Linux</li>
+  </ul>
+
+  <!-- KEAHLIAN NON TEKNIS -->
+  <h2>Keahlian Non Teknis</h2>
+  <ul>
+    <li>Mampu bekerja secara individu maupun tim</li>
+    <li>Disiplin, jujur, dan bertanggung jawab</li>
+    <li>Komunikasi yang baik</li>
+    <li>Mudah beradaptasi dengan lingkungan baru</li>
   </ul>
 
   <!-- PENGALAMAN -->
   <h2>Pengalaman</h2>
   <ul>
-    <li>Praktik kerja jaringan LAN di lingkungan sekolah</li>
-    <li>Simulasi jaringan menggunakan Cisco Packet Tracer</li>
-    <li>Perencanaan IP Address dan topologi jaringan</li>
+    <li>Praktik instalasi jaringan LAN di lingkungan sekolah</li>
+    <li>Perhitungan dan perencanaan IP Address jaringan</li>
+    <li>Simulasi topologi jaringan menggunakan Cisco Packet Tracer</li>
+    <li>Perawatan dan pengecekan jaringan komputer</li>
+  </ul>
+
+  <!-- PROYEK / KEGIATAN -->
+  <h2>Proyek / Kegiatan</h2>
+  <ul>
+    <li>Membuat topologi jaringan sederhana untuk laboratorium sekolah</li>
+    <li>Simulasi jaringan WAN dan point-to-point</li>
+    <li>Latihan troubleshooting koneksi jaringan</li>
   </ul>
 
   <!-- SERTIFIKAT -->
-  <h2>Tempat PKL/h2>
+  <h2>Sertifikat</h2>
   <ul>
-    <li>Krakatau Sarana properti</li>
+    <li>…………………</li>
+    <li>…………………</li>
   </ul>
 
-  <!-- HOBI -->
-  <h2>Hobi</h2>
+  <!-- HOBI & MINAT -->
+  <h2>Hobi & Minat</h2>
   <ul>
-    <li>Belajar teknologi jaringan</li>
-    <li>Membaca dan eksplorasi IT</li>
+    <li>Mempelajari teknologi jaringan dan IT</li>
+    <li>Mencoba konfigurasi jaringan sederhana</li>
+    <li>Membaca dan menonton konten edukasi IT</li>
   </ul>
 
   <!-- PENUTUP -->
   <h2>Pernyataan</h2>
   <p>
-    Saya menyatakan bahwa data yang saya tuliskan di atas adalah benar dan dapat
-    dipertanggungjawabkan.
+    Saya menyatakan bahwa seluruh data yang saya tuliskan di dalam Curriculum Vitae
+    ini adalah benar dan dapat dipertanggungjawabkan.
   </p>
 
 </div>
