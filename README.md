@@ -7,113 +7,139 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #eef1f5;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #e9ecef;
       margin: 0;
       padding: 0;
     }
 
-    .container {
-      max-width: 900px;
+    .cv {
+      max-width: 850px;
       background: #ffffff;
-      margin: 20px auto;
-      padding: 20px;
+      margin: 25px auto;
+      padding: 25px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     }
 
+    /* HEADER */
     .header {
       display: flex;
-      flex-wrap: wrap;
+      gap: 25px;
       align-items: center;
-      gap: 20px;
-      justify-content: center;
-      text-align: center;
+      border-bottom: 3px solid #1f3c88;
+      padding-bottom: 20px;
+      flex-wrap: wrap;
     }
 
-    .header img {
-      width: 130px;
-      height: 170px;
+    .photo {
+      width: 140px;
+      height: 180px;
+      border: 2px solid #000;
       object-fit: cover;
-      border-radius: 10px;
-      border: 3px solid #2c3e50;
+      background: #fff;
     }
 
-    h1 {
-      margin: 10px 0 5px;
-      color: #2c3e50;
+    .title h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #1f3c88;
     }
 
+    .title p {
+      margin: 5px 0 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* SECTION */
     h2 {
       margin-top: 25px;
-      border-bottom: 2px solid #2c3e50;
-      padding-bottom: 5px;
-      color: #2c3e50;
+      font-size: 20px;
+      color: #1f3c88;
+      border-left: 5px solid #1f3c88;
+      padding-left: 10px;
     }
 
     p, li {
-      color: #333;
       font-size: 15px;
+      color: #333;
       line-height: 1.6;
     }
 
     ul {
       padding-left: 20px;
+      margin-top: 8px;
     }
 
+    /* RESPONSIVE HP */
     @media (max-width: 600px) {
       .header {
-        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+      .title h1 {
+        font-size: 24px;
       }
     }
   </style>
 </head>
+
 <body>
 
-<div class="container">
+<div class="cv">
+
+  <!-- HEADER -->
   <div class="header">
-    <img src="foto.jpg" alt="Foto Maulana">
-    <div>
+    <img src="foto.jpg" alt="Foto Maulana" class="photo">
+    <div class="title">
       <h1>Maulana</h1>
       <p>Siswa SMK | Teknik Komputer dan Jaringan (TKJ)</p>
     </div>
   </div>
 
+  <!-- DATA DIRI -->
   <h2>Data Diri</h2>
   <p>
-    Nama: Maulana<br>
-    Sekolah: SMK Negeri …<br>
-    Jurusan: Teknik Komputer dan Jaringan<br>
-    Domisili: Indonesia
+    Nama Lengkap : Maulana<br>
+    Tempat, Tanggal Lahir : …………………<br>
+    Jenis Kelamin : Laki-laki<br>
+    Alamat : …………………<br>
+    Status : Pelajar
   </p>
 
-  <h2>Keahlian</h2>
-  <ul>
-    <li>Instalasi & konfigurasi jaringan LAN</li>
-    <li>Subnetting (FLSM & VLSM)</li>
-    <li>Crimping kabel UTP</li>
-    <li>Konfigurasi dasar Cisco</li>
-    <li>Linux & Windows dasar</li>
-  </ul>
-
-  <h2>Pengalaman</h2>
-  <ul>
-    <li>Praktik jaringan LAN di sekolah</li>
-    <li>Simulasi jaringan dengan Cisco Packet Tracer</li>
-    <li>Perhitungan IP Address & subnet</li>
-  </ul>
-
+  <!-- PENDIDIKAN -->
   <h2>Pendidikan</h2>
   <p>
-    SMK Negeri …<br>
+    SMK Negeri …………………<br>
     Jurusan Teknik Komputer dan Jaringan
   </p>
 
+  <!-- KEAHLIAN -->
+  <h2>Keahlian</h2>
+  <ul>
+    <li>Instalasi dan konfigurasi jaringan LAN</li>
+    <li>Subnetting IP Address (FLSM & VLSM)</li>
+    <li>Crimping kabel UTP dan troubleshooting jaringan</li>
+    <li>Konfigurasi dasar router & switch Cisco</li>
+    <li>Sistem Operasi Windows dan Linux dasar</li>
+  </ul>
+
+  <!-- PENGALAMAN -->
+  <h2>Pengalaman</h2>
+  <ul>
+    <li>Praktik kerja jaringan LAN di lingkungan sekolah</li>
+    <li>Simulasi jaringan menggunakan Cisco Packet Tracer</li>
+    <li>Perencanaan dan perhitungan IP Address jaringan</li>
+  </ul>
+
+  <!-- KONTAK -->
   <h2>Kontak</h2>
   <p>
-    Email: maulana@email.com<br>
-    GitHub: https://github.com/username
+    Email : maulana@email.com<br>
+    GitHub : https://github.com/username
   </p>
+
 </div>
 
 </body>
