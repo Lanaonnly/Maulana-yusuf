@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curriculum Vitae - Maulana</title>
-
+username.github.io/
+├── index.html
+└── foto.jpg 
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
