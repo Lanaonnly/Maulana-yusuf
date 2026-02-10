@@ -91,11 +91,11 @@
   <table class="data-table">
     <tr>
       <td width="35%">Nama Lengkap</td>
-      <td>: Maulana</td>
+      <td>: Maulana yusuf</td>
     </tr>
     <tr>
       <td>Tempat, Tanggal Lahir</td>
-      <td>: Rangkasbitung, 2007</td>
+      <td>: lebak 27 oktober 2008</td>
     </tr>
     <tr>
       <td>Jenis Kelamin</td>
@@ -103,15 +103,15 @@
     </tr>
     <tr>
       <td>Alamat</td>
-      <td>: Rangkasbitung, Banten</td>
+      <td>: kp. parage</td>
     </tr>
     <tr>
       <td>No. HP / WhatsApp</td>
-      <td>: 08xxxxxxxxxx</td>
+      <td>: 083872161233</td>
     </tr>
     <tr>
       <td>Email</td>
-      <td>: nama@email.com</td>
+      <td>: maulana27.10.28@gmail.com</td>
     </tr>
     <tr>
       <td>Status</td>
