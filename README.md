@@ -81,7 +81,7 @@ body {
 
     <!-- BAGIAN KIRI -->
     <div class="left">
-        <img src="foto.jpg" alt="Foto CV">
+        <img src="IMG_20250507_134840.jpg"> CV">
 
         <h3>DATA PRIBADI</h3>
         <p><b>Nama:</b> Anita</p>
