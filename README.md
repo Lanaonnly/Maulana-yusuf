@@ -31,7 +31,6 @@
             border: 1px solid #30363d;
         }
         
-        /* Header & Profile */
         .header {
             background: linear-gradient(135deg, #1f6feb 0%, #0d419d 100%);
             padding: 30px;
@@ -139,7 +138,6 @@
             margin-bottom: 10px;
         }
         
-        /* Content Layout */
         .content {
             display: grid;
             grid-template-columns: 1fr;
@@ -153,7 +151,6 @@
             }
         }
         
-        /* Sections */
         .section {
             margin-bottom: 25px;
         }
@@ -173,7 +170,6 @@
             font-size: 1.3rem;
         }
         
-        /* About Section */
         .about-text {
             background-color: #21262d;
             padding: 15px;
@@ -181,7 +177,6 @@
             border-left: 4px solid #1f6feb;
         }
         
-        /* Experience & Education */
         .timeline-item {
             margin-bottom: 20px;
             padding-left: 20px;
@@ -213,7 +208,6 @@
             display: block;
         }
         
-        /* Skills */
         .skill-item {
             margin-bottom: 15px;
         }
@@ -237,7 +231,6 @@
             border-radius: 5px;
         }
         
-        /* Contact Info */
         .contact-item {
             display: flex;
             align-items: center;
@@ -250,7 +243,6 @@
             width: 20px;
         }
         
-        /* Footer */
         .footer {
             text-align: center;
             padding: 20px;
@@ -271,7 +263,6 @@
             text-decoration: underline;
         }
         
-        /* GitHub Stats */
         .github-stats {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -299,7 +290,6 @@
             color: #8b949e;
         }
         
-        /* Responsive adjustments */
         @media (max-width: 768px) {
             .header {
                 padding: 20px;
@@ -314,7 +304,6 @@
             }
         }
         
-        /* Toast Notification */
         .toast {
             position: fixed;
             bottom: 20px;
@@ -340,7 +329,6 @@
             }
         }
         
-        /* Photo Upload Instructions */
         .upload-instructions {
             background-color: #21262d;
             padding: 15px;
@@ -364,7 +352,6 @@
             margin-bottom: 8px;
         }
         
-        /* Photo Controls */
         .photo-controls {
             margin-top: 15px;
             display: flex;
@@ -395,7 +382,6 @@
             background-color: #f85149;
         }
         
-        /* Photo Preview */
         .photo-preview {
             text-align: center;
             margin-top: 10px;
@@ -414,24 +400,19 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header Section -->
         <header class="header">
             <div class="profile-container">
-                <!-- Photo Upload Area -->
                 <div class="profile-img-container">
-                    <img id="profile-picture" src="https://images.unsplash.com/photofile_00000000cb4871fabff95c8579a26c7c1.2.1&auto=format&fit=crop&w=500&q=80" alt="file_00000000cb4871fabff95c8579a26c7c" class="profile-img">
+                    <img id="profile-picture" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Foto Maulana Yusuf" class="profile-img">
                     
-                    <!-- Upload Overlay -->
                     <div class="upload-overlay" id="upload-trigger">
                         <i class="fas fa-camera"></i>
                         <div class="upload-text">Klik untuk Upload Foto</div>
                     </div>
                     
-                    <!-- Hidden File Input -->
                     <input type="file" id="photo-input" accept="image/*">
                 </div>
                 
-                <!-- Profile Text -->
                 <div class="profile-text">
                     <h1>Maulana Yusuf</h1>
                     <h2>Pelajar TJKT | XII TJKT 2</h2>
@@ -447,11 +428,8 @@
             </div>
         </header>
         
-        <!-- Main Content -->
         <div class="content">
-            <!-- Left Column -->
             <div class="left-column">
-                <!-- About Me -->
                 <section class="section">
                     <h2 class="section-title"><i class="fas fa-user"></i> Tentang Saya</h2>
                     <div class="about-text">
@@ -460,7 +438,6 @@
                     </div>
                 </section>
                 
-                <!-- Experience -->
                 <section class="section">
                     <h2 class="section-title"><i class="fas fa-briefcase"></i> Pengalaman</h2>
                     
@@ -483,7 +460,6 @@
                     </div>
                 </section>
                 
-                <!-- Education -->
                 <section class="section">
                     <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Pendidikan</h2>
                     
@@ -501,7 +477,6 @@
                     </div>
                 </section>
                 
-                <!-- Photo Upload Instructions -->
                 <section class="section">
                     <h2 class="section-title"><i class="fas fa-camera"></i> Upload Foto Profil</h2>
                     <div class="upload-instructions">
@@ -530,9 +505,7 @@
                 </section>
             </div>
             
-            <!-- Right Column -->
             <div class="right-column">
-                <!-- Contact -->
                 <section class="section">
                     <h2 class="section-title"><i class="fas fa-address-book"></i> Kontak</h2>
                     
@@ -562,7 +535,6 @@
                     </div>
                 </section>
                 
-                <!-- Skills -->
                 <section class="section">
                     <h2 class="section-title"><i class="fas fa-code"></i> Keahlian Teknis</h2>
                     
@@ -617,7 +589,6 @@
                     </div>
                 </section>
                 
-                <!-- GitHub Stats -->
                 <section class="section">
                     <h2 class="section-title"><i class="fab fa-github"></i> Statistik GitHub</h2>
                     
@@ -644,7 +615,6 @@
                     </div>
                 </section>
                 
-                <!-- Interests -->
                 <section class="section">
                     <h2 class="section-title"><i class="fas fa-star"></i> Minat</h2>
                     
@@ -659,7 +629,6 @@
             </div>
         </div>
         
-        <!-- Footer -->
         <footer class="footer">
             <p>CV Maulana Yusuf - XII TJKT 2 | Tema GitHub</p>
             <p>Terakhir diperbarui: Juni 2024</p>
@@ -669,13 +638,11 @@
         </footer>
     </div>
     
-    <!-- Toast Notification -->
     <div class="toast" id="toast-notification">
         <i class="fas fa-check-circle"></i> Foto profil berhasil diubah!
     </div>
     
     <script>
-        // DOM Elements
         const photoInput = document.getElementById('photo-input');
         const profilePicture = document.getElementById('profile-picture');
         const uploadTrigger = document.getElementById('upload-trigger');
@@ -684,10 +651,8 @@
         const currentPhotoStatus = document.getElementById('current-photo-status');
         const toastNotification = document.getElementById('toast-notification');
         
-        // Default photo URL
         const defaultPhotoUrl = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80';
         
-        // Check if there's a saved photo in localStorage
         document.addEventListener('DOMContentLoaded', function() {
             const savedPhoto = localStorage.getItem('profilePhoto');
             if (savedPhoto) {
@@ -696,7 +661,6 @@
                 currentPhotoStatus.style.color = '#58a6ff';
             }
             
-            // Simple animation for skill bars on page load
             const skillBars = document.querySelectorAll('.skill-level');
             
             skillBars.forEach(bar => {
@@ -709,12 +673,10 @@
                 }, 300);
             });
             
-            // Update current year in footer
             const currentYear = new Date().getFullYear();
             document.querySelector('.footer p:last-of-type').innerHTML = `Terakhir diperbarui: Juni ${currentYear}`;
         });
         
-        // Function to show toast notification
         function showToast(message) {
             toastNotification.innerHTML = `<i class="fas fa-check-circle"></i> ${message}`;
             toastNotification.style.display = 'block';
@@ -724,18 +686,15 @@
             }, 3000);
         }
         
-        // Function to handle photo upload
         function handlePhotoUpload(event) {
             const file = event.target.files[0];
             
             if (file) {
-                // Check if file is an image
                 if (!file.type.match('image.*')) {
                     showToast('Silakan pilih file gambar (JPEG, PNG, dll)');
                     return;
                 }
                 
-                // Check file size (max 5MB)
                 if (file.size > 5 * 1024 * 1024) {
                     showToast('Ukuran file terlalu besar. Maksimal 5MB');
                     return;
@@ -744,17 +703,13 @@
                 const reader = new FileReader();
                 
                 reader.onload = function(e) {
-                    // Set the uploaded image as profile picture
                     profilePicture.src = e.target.result;
                     
-                    // Save to localStorage
                     localStorage.setItem('profilePhoto', e.target.result);
                     
-                    // Update status
                     currentPhotoStatus.textContent = `Foto: ${file.name}`;
                     currentPhotoStatus.style.color = '#58a6ff';
                     
-                    // Show success message
                     showToast('Foto profil berhasil diubah!');
                 }
                 
@@ -762,42 +717,31 @@
             }
         }
         
-        // Function to remove uploaded photo
         function removeUploadedPhoto() {
-            // Reset to default photo
             profilePicture.src = defaultPhotoUrl;
             
-            // Remove from localStorage
             localStorage.removeItem('profilePhoto');
             
-            // Update status
             currentPhotoStatus.textContent = 'Foto default sedang digunakan';
             currentPhotoStatus.style.color = '#8b949e';
             
-            // Show message
             showToast('Foto kembali ke default');
         }
         
-        // Event Listeners
-        // Click on upload overlay or profile picture to trigger file input
         uploadTrigger.addEventListener('click', () => {
             photoInput.click();
         });
         
-        // Click on profile picture itself
         profilePicture.addEventListener('click', () => {
             photoInput.click();
         });
         
-        // Change photo button
         changePhotoBtn.addEventListener('click', () => {
             photoInput.click();
         });
         
-        // Remove photo button
         removePhotoBtn.addEventListener('click', removeUploadedPhoto);
         
-        // File input change event
         photoInput.addEventListener('change', handlePhotoUpload);
     </script>
 </body>
