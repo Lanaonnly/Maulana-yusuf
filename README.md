@@ -18,6 +18,7 @@
             color: #c9d1d9;
             line-height: 1.6;
             padding: 20px;
+            min-height: 100vh;
         }
         
         .container {
@@ -53,15 +54,65 @@
             }
         }
         
+        .profile-img-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+        
         .profile-img {
-            width: 180px;
-            height: 180px;
+            width: 100%;
+            height: 100%;
             border-radius: 50%;
             border: 5px solid #30363d;
             object-fit: cover;
             background-color: #0d1117;
             padding: 5px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.03);
+            border-color: #58a6ff;
+        }
+        
+        .upload-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .profile-img-container:hover .upload-overlay {
+            opacity: 1;
+        }
+        
+        .upload-overlay i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .upload-text {
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 0 10px;
+        }
+        
+        #photo-input {
+            display: none;
         }
         
         .profile-text h1 {
@@ -263,27 +314,101 @@
             }
         }
         
-        /* Photo placeholder styling */
-        .photo-placeholder {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 5px solid #30363d;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #0d1117;
-            color: #8b949e;
-            text-align: center;
-            padding: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #238636;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            display: none;
+            z-index: 1000;
+            animation: slideIn 0.3s ease;
         }
         
-        .photo-placeholder i {
-            font-size: 3rem;
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        /* Photo Upload Instructions */
+        .upload-instructions {
+            background-color: #21262d;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #f78166;
+        }
+        
+        .upload-instructions h3 {
+            color: #f78166;
             margin-bottom: 10px;
-            color: #30363d;
+            font-size: 1.1rem;
+        }
+        
+        .upload-instructions ul {
+            padding-left: 20px;
+            color: #8b949e;
+        }
+        
+        .upload-instructions li {
+            margin-bottom: 8px;
+        }
+        
+        /* Photo Controls */
+        .photo-controls {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .photo-btn {
+            padding: 8px 15px;
+            background-color: #238636;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+        
+        .photo-btn:hover {
+            background-color: #2ea043;
+        }
+        
+        .photo-btn.remove {
+            background-color: #da3633;
+        }
+        
+        .photo-btn.remove:hover {
+            background-color: #f85149;
+        }
+        
+        /* Photo Preview */
+        .photo-preview {
+            text-align: center;
+            margin-top: 10px;
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+        
+        .photo-name {
+            display: inline-block;
+            max-width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -292,11 +417,18 @@
         <!-- Header Section -->
         <header class="header">
             <div class="profile-container">
-                <!-- Photo placeholder - replace with actual photo -->
-                <div class="photo-placeholder">
-                    <i class="fas fa-user-circle"></i>
-                    <span>Foto <img src="IMG_20250507_134840.jpg"></span>
-        
+                <!-- Photo Upload Area -->
+                <div class="profile-img-container">
+                    <img id="profile-picture" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Foto Maulana Yusuf" class="profile-img">
+                    
+                    <!-- Upload Overlay -->
+                    <div class="upload-overlay" id="upload-trigger">
+                        <i class="fas fa-camera"></i>
+                        <div class="upload-text">Klik untuk Upload Foto</div>
+                    </div>
+                    
+                    <!-- Hidden File Input -->
+                    <input type="file" id="photo-input" accept="image/*">
                 </div>
                 
                 <!-- Profile Text -->
@@ -366,6 +498,34 @@
                         <h3>SMP Negeri 5 Digital</h3>
                         <span class="date">2019 - 2022</span>
                         <p>Jurusan Umum dengan minat khusus di bidang Teknologi Informasi</p>
+                    </div>
+                </section>
+                
+                <!-- Photo Upload Instructions -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-camera"></i> Upload Foto Profil</h2>
+                    <div class="upload-instructions">
+                        <h3>Cara Upload Foto:</h3>
+                        <ul>
+                            <li>Klik pada foto profil di bagian atas</li>
+                            <li>Pilih foto dari komputer/HP Anda</li>
+                            <li>Foto akan otomatis ditampilkan sebagai foto profil</li>
+                            <li>Gunakan tombol "Hapus Foto" untuk kembali ke foto default</li>
+                            <li>Foto yang diupload hanya disimpan di browser Anda (tidak diunggah ke server)</li>
+                        </ul>
+                        
+                        <div class="photo-controls">
+                            <button class="photo-btn" id="change-photo">
+                                <i class="fas fa-upload"></i> Ganti Foto
+                            </button>
+                            <button class="photo-btn remove" id="remove-photo">
+                                <i class="fas fa-trash"></i> Hapus Foto
+                            </button>
+                        </div>
+                        
+                        <div class="photo-preview">
+                            <span id="current-photo-status">Foto default sedang digunakan</span>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -509,9 +669,34 @@
         </footer>
     </div>
     
+    <!-- Toast Notification -->
+    <div class="toast" id="toast-notification">
+        <i class="fas fa-check-circle"></i> Foto profil berhasil diubah!
+    </div>
+    
     <script>
-        // Simple animation for skill bars on page load
+        // DOM Elements
+        const photoInput = document.getElementById('photo-input');
+        const profilePicture = document.getElementById('profile-picture');
+        const uploadTrigger = document.getElementById('upload-trigger');
+        const changePhotoBtn = document.getElementById('change-photo');
+        const removePhotoBtn = document.getElementById('remove-photo');
+        const currentPhotoStatus = document.getElementById('current-photo-status');
+        const toastNotification = document.getElementById('toast-notification');
+        
+        // Default photo URL
+        const defaultPhotoUrl = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80';
+        
+        // Check if there's a saved photo in localStorage
         document.addEventListener('DOMContentLoaded', function() {
+            const savedPhoto = localStorage.getItem('profilePhoto');
+            if (savedPhoto) {
+                profilePicture.src = savedPhoto;
+                currentPhotoStatus.textContent = 'Foto kustom sedang digunakan';
+                currentPhotoStatus.style.color = '#58a6ff';
+            }
+            
+            // Simple animation for skill bars on page load
             const skillBars = document.querySelectorAll('.skill-level');
             
             skillBars.forEach(bar => {
@@ -528,6 +713,92 @@
             const currentYear = new Date().getFullYear();
             document.querySelector('.footer p:last-of-type').innerHTML = `Terakhir diperbarui: Juni ${currentYear}`;
         });
+        
+        // Function to show toast notification
+        function showToast(message) {
+            toastNotification.innerHTML = `<i class="fas fa-check-circle"></i> ${message}`;
+            toastNotification.style.display = 'block';
+            
+            setTimeout(() => {
+                toastNotification.style.display = 'none';
+            }, 3000);
+        }
+        
+        // Function to handle photo upload
+        function handlePhotoUpload(event) {
+            const file = event.target.files[0];
+            
+            if (file) {
+                // Check if file is an image
+                if (!file.type.match('image.*')) {
+                    showToast('Silakan pilih file gambar (JPEG, PNG, dll)');
+                    return;
+                }
+                
+                // Check file size (max 5MB)
+                if (file.size > 5 * 1024 * 1024) {
+                    showToast('Ukuran file terlalu besar. Maksimal 5MB');
+                    return;
+                }
+                
+                const reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    // Set the uploaded image as profile picture
+                    profilePicture.src = e.target.result;
+                    
+                    // Save to localStorage
+                    localStorage.setItem('profilePhoto', e.target.result);
+                    
+                    // Update status
+                    currentPhotoStatus.textContent = `Foto: ${file.name}`;
+                    currentPhotoStatus.style.color = '#58a6ff';
+                    
+                    // Show success message
+                    showToast('Foto profil berhasil diubah!');
+                }
+                
+                reader.readAsDataURL(file);
+            }
+        }
+        
+        // Function to remove uploaded photo
+        function removeUploadedPhoto() {
+            // Reset to default photo
+            profilePicture.src = defaultPhotoUrl;
+            
+            // Remove from localStorage
+            localStorage.removeItem('profilePhoto');
+            
+            // Update status
+            currentPhotoStatus.textContent = 'Foto default sedang digunakan';
+            currentPhotoStatus.style.color = '#8b949e';
+            
+            // Show message
+            showToast('Foto kembali ke default');
+        }
+        
+        // Event Listeners
+        // Click on upload overlay or profile picture to trigger file input
+        uploadTrigger.addEventListener('click', () => {
+            photoInput.click();
+        });
+        
+        // Click on profile picture itself
+        profilePicture.addEventListener('click', () => {
+            photoInput.click();
+        });
+        
+        // Change photo button
+        changePhotoBtn.addEventListener('click', () => {
+            photoInput.click();
+        });
+        
+        // Remove photo button
+        removePhotoBtn.addEventListener('click', removeUploadedPhoto);
+        
+        // File input change event
+        photoInput.addEventListener('change', handlePhotoUpload);
     </script>
 </body>
 </html>
