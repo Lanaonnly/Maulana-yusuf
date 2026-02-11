@@ -95,8 +95,7 @@ ul{
 
     <!-- HEADER + FOTO -->
     <div class="header">
-        <img src="data:image/jpeg;base64,
-PASTE_BASE64_FOTO_KAMU_DI_SINI
+        <img src="data:image/20251219_091344.jpg
 " alt="Foto CV">
         <div>
             <h1>NAMA LENGKAP</h1>
