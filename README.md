@@ -419,7 +419,7 @@
             <div class="profile-container">
                 <!-- Photo Upload Area -->
                 <div class="profile-img-container">
-                    <img id="profile-picture" src="https://images.unsplash.com/photofile_00000000cb4871fabff95c8579a26c7c1.2.1&auto=format&fit=crop&w=500&q=80" alt="Foto Maulana Yusuf" class="profile-img">
+                    <img id="profile-picture" src="https://images.unsplash.com/photofile_00000000cb4871fabff95c8579a26c7c1.2.1&auto=format&fit=crop&w=500&q=80" alt="file_00000000cb4871fabff95c8579a26c7c" class="profile-img">
                     
                     <!-- Upload Overlay -->
                     <div class="upload-overlay" id="upload-trigger">
