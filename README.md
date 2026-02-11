@@ -76,15 +76,13 @@ h1{
 
 <div class="container">
 
-<!-- HEADER -->
 <div class="header">
-<img src="foto.jpg" class="profile-img">
+<img src="foto-ujang.jpg" class="profile-img">
 <h1>Maulana Yusuf</h1>
 <p>Pelamar Posisi IT Support / Networking</p>
 <p>Lamaran Kerja PT Krakatau Sarana Properti</p>
 </div>
 
-<!-- TENTANG -->
 <div class="section">
 <h2>Tentang Saya</h2>
 <p>
@@ -94,7 +92,6 @@ Saya mengajukan lamaran kerja di PT Krakatau Sarana Properti untuk mengembangkan
 </p>
 </div>
 
-<!-- PENGALAMAN -->
 <div class="section">
 <h2>Pengalaman Kerja</h2>
 
@@ -106,16 +103,12 @@ Saya mengajukan lamaran kerja di PT Krakatau Sarana Properti untuk mengembangkan
 
 </div>
 
-<!-- PENDIDIKAN -->
 <div class="section">
 <h2>Pendidikan</h2>
-
 <p><b>SMK Jurusan TJKT</b></p>
 <p>2022 - Sekarang</p>
-
 </div>
 
-<!-- KEAHLIAN -->
 <div class="section">
 <h2>Keahlian</h2>
 
@@ -141,21 +134,12 @@ Saya mengajukan lamaran kerja di PT Krakatau Sarana Properti untuk mengembangkan
 
 </div>
 
-<!-- KONTAK -->
 <div class="section">
 <h2>Kontak</h2>
 
-<div class="contact">
-📧 maulana27.10.28@gmail.com
-</div>
-
-<div class="contact">
-📱 083872161233
-</div>
-
-<div class="contact">
-📍 Jln. Ir Soetami
-</div>
+<div class="contact">📧 maulana27.10.28@gmail.com</div>
+<div class="contact">📱 083872161233</div>
+<div class="contact">📍 Jln. Ir Soetami</div>
 
 </div>
 
