@@ -295,8 +295,8 @@
                 <!-- Photo placeholder - replace with actual photo -->
                 <div class="photo-placeholder">
                     <i class="fas fa-user-circle"></i>
-                    <span>Foto Free Fire</span>
-                    <span>Maulana Yusuf</span>
+                    <span>Foto <img src="IMG_20250507_134840.jpg"></span>
+        
                 </div>
                 
                 <!-- Profile Text -->
