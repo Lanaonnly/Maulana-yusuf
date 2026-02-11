@@ -1,146 +1,151 @@
+
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV Online - Anita</title>
+<title>CV Online Anita</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #eef2f5;
 }
 
-.container {
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    background: #fff;
+.cv {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-/* KIRI */
-.left {
-    width: 35%;
-    background: #177ca6;
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #1e90ff, #00bcd4);
     color: white;
-    padding: 25px;
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.left img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
+.header img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 15px;
 }
 
-.left h3 {
-    border-bottom: 2px solid white;
-    padding-bottom: 5px;
+.header h1 {
+    margin: 10px 0 5px;
 }
 
-.left p, .left li {
-    font-size: 14px;
-    line-height: 1.6;
+.header p {
+    margin: 0;
+    font-size: 16px;
 }
 
-.left ul {
-    padding-left: 18px;
-}
-
-/* KANAN */
-.right {
-    width: 65%;
+/* ISI */
+.content {
     padding: 30px;
 }
 
-.right h1 {
-    color: #177ca6;
-    margin-bottom: 5px;
+.section {
+    margin-bottom: 25px;
 }
 
-.right h2 {
-    color: #177ca6;
-    border-bottom: 2px solid #177ca6;
-    padding-bottom: 5px;
-    margin-top: 30px;
+.section h2 {
+    color: #1e90ff;
+    border-left: 5px solid #1e90ff;
+    padding-left: 10px;
+    margin-bottom: 10px;
 }
 
-.right p, .right li {
+.section p, .section li {
     font-size: 15px;
     line-height: 1.7;
 }
 
-.right ul {
+.section ul {
     padding-left: 20px;
+}
+
+/* INFO BOX */
+.info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.info div {
+    background: #f5f9fc;
+    padding: 15px;
+    border-radius: 8px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="cv">
 
-    <!-- BAGIAN KIRI -->
-    <div class="left">
-        <img src="IMG_20250507_134840.jpg"> 
-        CV">
-
-        <h3>DATA PRIBADI</h3>
-        <p><b>Nama:</b> Anita</p>
-        <p><b>Tempat, Tgl Lahir:</b> Jakarta, 12 Mei 2007</p>
-        <p><b>Jenis Kelamin:</b> Perempuan</p>
-        <p><b>Agama:</b> Islam</p>
-        <p><b>Kewarganegaraan:</b> Indonesia</p>
-
-        <h3>KONTAK</h3>
-        <p>📞 08xxxxxxxxxx</p>
-        <p>✉️ anita@gmail.com</p>
-        <p>📍 Indonesia</p>
-
-        <h3>SKILL</h3>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>Microsoft Office</li>
-            <li>Desain Canva</li>
-            <li>Jaringan Dasar</li>
-        </ul>
-
-        <h3>SOSIAL MEDIA</h3>
-        <p>Instagram: @anita</p>
-        <p>GitHub: github.com/anita</p>
+    <!-- HEADER -->
+    <div class="header">
+        <img src="foto.jpg" alt="Foto CV">
+        <h1>ANITA</h1>
+        <p>Siswa SMK | Teknik Komputer dan Jaringan</p>
     </div>
 
-    <!-- BAGIAN KANAN -->
-    <div class="right">
-        <h1>ANITA</h1>
-        <p><b>Siswa SMK | Teknik Komputer dan Jaringan</b></p>
+    <!-- ISI -->
+    <div class="content">
 
-        <h2>PROFIL</h2>
-        <p>
-            Siswa SMK jurusan Teknik Komputer dan Jaringan yang memiliki minat
-            di bidang IT, jaringan komputer, dan pengembangan web.
-            Terbiasa bekerja secara rapi, disiplin, dan bertanggung jawab.
-        </p>
+        <div class="section">
+            <h2>Profil Singkat</h2>
+            <p>
+                Siswa SMK jurusan Teknik Komputer dan Jaringan yang memiliki
+                ketertarikan di bidang IT, jaringan komputer, dan web dasar.
+                Terbiasa bekerja dengan rapi, disiplin, dan bertanggung jawab.
+            </p>
+        </div>
 
-        <h2>RIWAYAT PENDIDIKAN</h2>
-        <ul>
-            <li><b>SMK Negeri</b> – Teknik Komputer dan Jaringan (2023–Sekarang)</li>
-            <li>SMP Negeri (2020–2023)</li>
-            <li>SD Negeri (2014–2020)</li>
-        </ul>
+        <div class="section">
+            <h2>Data Pribadi</h2>
+            <div class="info">
+                <div>📍 Indonesia</div>
+                <div>🎂 12 Mei 2007</div>
+                <div>👩 Perempuan</div>
+                <div>🕌 Islam</div>
+            </div>
+        </div>
 
-        <h2>PENGALAMAN</h2>
-        <ul>
-            <li>Praktik instalasi jaringan LAN</li>
-            <li>Membuat website sederhana dengan HTML & CSS</li>
-            <li>Perawatan komputer dan troubleshooting</li>
-        </ul>
+        <div class="section">
+            <h2>Pendidikan</h2>
+            <ul>
+                <li><b>SMK Negeri</b> – Teknik Komputer dan Jaringan (2023–Sekarang)</li>
+                <li>SMP Negeri (2020–2023)</li>
+                <li>SD Negeri (2014–2020)</li>
+            </ul>
+        </div>
 
-        <h2>KELEBIHAN</h2>
-        <ul>
-            <li>Cepat belajar</li>
-            <li>Disiplin dan bertanggung jawab</li>
-            <li>Mampu bekerja individu maupun tim</li>
-        </ul>
+        <div class="section">
+            <h2>Keahlian</h2>
+            <ul>
+                <li>HTML & CSS Dasar</li>
+                <li>Instalasi LAN</li>
+                <li>Perakitan Komputer</li>
+                <li>Microsoft Word & Excel</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Kontak</h2>
+            <p>📞 08xxxxxxxxxx</p>
+            <p>✉️ anita@gmail.com</p>
+            <p>💻 github.com/anita</p>
+        </div>
+
     </div>
 
 </div>
