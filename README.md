@@ -81,9 +81,7 @@ body {
 
     <!-- BAGIAN KIRI -->
     <div class="left">
-        <img src="foto.jpg" alt="Foto CV">cv/
-├── index.html
-├── foto.jpg   ← foto CV kamu (nama bebas, sesuaikan)
+        <img src="foto.jpg" alt="Foto CV">
 
         <h3>DATA PRIBADI</h3>
         <p><b>Nama:</b> Anita</p>
