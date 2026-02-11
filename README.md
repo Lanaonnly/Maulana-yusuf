@@ -93,7 +93,7 @@ body {
 
     <!-- HEADER -->
     <div class="header">
-        <<img src="IMG_20250507_134840.jpg">
+        <img src="IMG_20250507_134840.jpg">
         <h1>ANITA</h1>
         <p>Siswa SMK | Teknik Komputer dan Jaringan</p>
     </div>
