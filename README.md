@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -95,8 +95,7 @@ ul{
 
     <!-- HEADER + FOTO -->
     <div class="header">
-        <img src="data:image/20251219_091344.jpg
-" alt="Foto CV">
+        <img src="IMG20251219_091344.jpg">
         <div>
             <h1>NAMA LENGKAP</h1>
             <p>Siswa SMK | Teknik Komputer dan Jaringan</p>
