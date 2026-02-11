@@ -95,7 +95,7 @@ ul{
 
     <!-- HEADER + FOTO -->
     <div class="header">
-        <img src="IMG20251219_091344.jpg">
+        <img src="IMG2 0251219_091344.jpg">
         <div>
             <h1>NAMA LENGKAP</h1>
             <p>Siswa SMK | Teknik Komputer dan Jaringan</p>
